@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Coffee House</title>
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+  <!-- Section: Header / Navigation -->
+  <header class="header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <div class="logo">
+        <img src="images/my-coffee-shop-logo.svg" alt="Logo of the Coffee Company" width="200">
+      </div>
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#locations">Locations</a></li>
+      </ul>
+
+      <!-- Hamburger Menu Icon -->
+      <button class="menu-icon" tabindex="0" role="button" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+    </nav>
+  </header>
+
+
+  <!-- Header / Hero Section -->
+<section class="hero" id="maincontent">
+  <div class="hero-overlay"></div> <!-- dark transparent layer -->
+  <img src="images/hero-background.jpg" alt="Cup of coffee on a table" class="hero-image">
+  <div class="hero-text">
+    <h1>Experience coffee like never before</h1>
+    <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
+    <button class="button" onclick="location.href='#menu'">Explore our menu</button>
+  </div>
+</section>
+
+
+  <!-- Main Content -->
+  <main role="main">
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome section">
+      <h2>Welcome to My Coffee House</h2>
+      <h3>
+        EXPERIENCE A NEW WAY<br>
+        TO TASTE COFFEE
+      </h3>
+    </section>
+    <!-- Coffee Images Gallery Section -->
+<section class="coffee-gallery section">
+  <!-- Big Latte Image -->
+  <div class="full-image">
+    <img src="images/latte.jpeg" alt="A delicious latte in a white cup" />
+  </div>
+
+  <!-- NEW container for two image rows -->
+  <div class="half-row-container">
+    <!-- First row -->
+    <div class="half-row">
+      <img src="images/coffee-beans.jpeg" alt="Coffee beans in hand" />
+      <img src="images/pouring-coffee.jpeg" alt="Barista pouring coffee" />
+    </div>
+
+    <!-- Second row -->
+    <div class="half-row">
+      <img src="images/three-cups.jpeg" alt="Three coffee cups on a table" />
+      <img src="images/smiling-employee.jpeg" alt="Smiling coffee shop employee" />
+    </div>
+  </div>
+</section>
+
+
+    <!-- What We Offer Section -->
+    <section id="what-we-offer" class="section">
+      <h2>What we Offer</h2>
+      <h3>Why visit us?</h3>
+      <ul class="offers">
+        <li>
+          <img src="images/fair-trade.svg" alt="Coffee farmer holding beans">
+          <h4>Fair Trade Coffee</h4>
+          <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+        </li>
+        <li>
+          <img src="images/local-baked-goods.svg" alt="Fresh baked goods on display">
+          <h4>Local baked goods</h4>
+          <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+        </li>
+        <li>
+          <img src="images/made-with-love.svg" alt="Smiling barista serving a coffee">
+          <h4>Made with love</h4>
+          <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day off right.</p>
+        </li>
+      </ul>
+    </section>
+<!-- Menu Section -->
+<section id="menu-section" class="section">
+  <div class="menu-overlay">
+    <img src="images/coffee-shop.jpeg" alt="Coffee Shop Interior" class="menu-bg">
+    <div class="menu-content wrapper">
+      <div class="menu-columns">
+        <!-- Our Menu Column -->
+        <div class="menu-box">
+          <h2>Our Menu</h2>
+          <h3>
+            Explore What We<br>
+            <strong>Have TO OFFER YOU</strong>
+          </h3>
+          <a href="#" class="button-outline-dark spaced-button">View Menu</a>
+        </div>
+
+        <!-- Location Column -->
+        <div class="menu-box">
+          <h2>Location</h2>
+          <h3>
+            Find Your Nearest<br>
+            <strong>Coffee Shop</strong>
+          </h3>
+          <a href="#" class="button-outline-light spaced-button">View Location</a>
+        </div>
+</section>
+
+
+
+    <!-- About Us Section -->
+<section id="about-us" class="section">
+  <img src="images/about-us.jpeg" alt="Inside view of our coffee house">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <h3>Read Our History</h3>
+    <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+    <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+    <a href="#" class="button">Learn more</a>
+  </div>
+</section>
+
+   
+   <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section section">
+  <div class="wrapper">
+    <h2 class="testimonial-subtitle">Testimonials</h2>
+    <h3 class="testimonial-heading">
+      WHAT OUR CUSTOMERS<br><span>SAY ABOUT US</span>
+    </h3>
+    <div class="testimonials">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <img src="images/testimonial-1.jpeg" alt="testimonial 1">
+        <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+        <h4>JANE D., TORONTO</h4>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <img src="images/testimonial-2.jpeg" alt="testimonial 2">
+        <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+        <h4>SCOTT S., OTTAWA</h4>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <img src="images/testimonial-3.jpeg" alt="testimonial 3">
+        <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+        <h4>SUSIE F., OTTAWA</h4>
+      </div>
+</section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <p>© My Coffee Company 2025</p>
+  </footer>
+
+</div>
+</body>
+</html>
