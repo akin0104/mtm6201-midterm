@@ -897,7 +897,10 @@ text-align: center;
   color: white !important;
 }
 
-/
+/* Make "Our Menu" and "Location" heading bolder */
+.menu-bg h2 {
+  font-weight: 800;
+}
 
 
 /* Responsive adjustments for tablets and up */
