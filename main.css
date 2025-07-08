@@ -803,3 +803,22 @@ text-align: center;
 #menu-section {
   margin-bottom: 4rem; /* space before next section */
 }
+
+.menu-overlay {
+  position: relative;
+  min-height: 500px; /* Add height so next section doesn't overlap */
+
+}
+@media (max-width: 767px) {
+  .menu-content {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+.menu-box {
+  max-width: 100%;
+}
+#menu-section {
+  margin-bottom: 5rem; /* extra space between section */
+}
