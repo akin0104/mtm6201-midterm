@@ -800,25 +800,116 @@ text-align: center;
   }
 }
 
+/* Menu Section Background and Layout */
 #menu-section {
-  margin-bottom: 4rem; /* space before next section */
+  position: relative;
+  overflow: hidden;
 }
 
 .menu-overlay {
   position: relative;
-  min-height: 500px; /* Add height so next section doesn't overlap */
+  min-height: 500px; /* Adjust height as needed */
+  background-image: url('images/coffee-shop.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* Dark transparent overlay for better text contrast */
+.menu-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35); /* Adjust opacity as needed */
+  z-index: 1;
 }
-@media (max-width: 767px) {
-  .menu-content {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
-  }
+
+/* Content on top of the background */
+.menu-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  padding: 1.5rem;
+  color: #fff; /* White text for contrast */
+  text-align: center;
+  background: transparent !important; /* Remove any background colors */
 }
+
+/* Layout for menu columns */
+.menu-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Each menu box */
 .menu-box {
   max-width: 100%;
 }
-#menu-section {
-  margin-bottom: 5rem; /* extra space between section */
+
+/* Buttons styling */
+.button-outline-dark, .button-outline-light {
+  display: inline-block;
+  margin: 0.75rem 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid currentColor;
+  text-decoration: none;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  background: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button-outline-dark:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.button-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Style only the "View Menu" button */
+.button-outline-dark {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block;
+}
+
+/* Optional: Add hover effect */
+.button-outline-dark:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/
+
+
+/* Responsive adjustments for tablets and up */
+@media (min-width: 768px) {
+  .menu-columns {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    text-align: left;
+  }
+
+  .menu-box {
+    max-width: 500px;
+  }
 }
